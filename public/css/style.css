@@ -89,8 +89,17 @@ color: mediumvioletred;}
     }
 
 }
-table{border-style-button: solid;
-border-color:black;
+.table{border-style-button: solid;
+border-bottom-color:black;
+margin-left: 10px;
 }
 
-button{background-color: black;}
+button{background-color: black;
+color:whitesmoke;}
+
+.form{
+  margin: 20px;
+  text-align: RIGHT;
+  
+
+}
