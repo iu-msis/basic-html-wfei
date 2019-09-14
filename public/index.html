@@ -15,58 +15,55 @@
   <a href="book.html">Favorite BooKs</a>
   <a href="dog.html">My Dog</a>
 </div>
- <div class="main"> 
+ <div class="main">
 <div class="content">
     <center>
-        
-
-  
 <h2 id="margin">Alicia Walters Home Page </h2>
-        
-  
-     
+
    <div class="container">
-  <div class="row">
-    <div class="col">
-      <img src="image/ALICIA.png" height="400">
-    </div>
-    
-      <div class="col">
+     <div class="row">
+
       <h4>About Me</h4>
+        <div class="col" id="randomUser" class="queueView">
+            <div class="users" v-for="user in users">
+          <img :src="{}" height="400">
 
     <ul class="list2">
-        <li><B>Name:</B> Alicia Walters </li>
-         <LI><b>Country:</b> United States</LI>
-         <li><b>Country of Origin:</b> China</li>
-         <li><b>Birthdate:</b> June 1</li>
-         <li><b>Age:</b> 22 </li>
-         <li><b>Email:</b> <a href=mailto:aliciaw0601@gmail.com? subject="HTML link">aliciaw0601@gmail.com</a></li>
+
+
+        <li><b>Last Name:</b> <span class="name">{{ users.lastname }}</span> </li>
+        <li><b>First Name:</b> <span class="name">{{ users.firstName }}</span></li>
+         <li><b>Country of Origin:</b> <span class="country">{{ users.country }}</span></li>
+         <li><b>Birthdate:</b>  <span class="dob">{{ users.dob.date }}</span></li>
+         <li><b>Age:</b>  <span class="age">{{ users.dob.age }}</span> </li>
+         <li><b>Email:</b> <a href=mailto: <span class="email">{{ users.email }}</span> subject="HTML link">aliciaw0601@gmail.com</a></li>
           </ul>
     </div>
-  </div> 
+  </div>
         </div>
 
     </center>
-      
-   
+
+
 
       </div>
     </div>
-    
 
-                                                  
+
+
  <center>
     <div class="footer">
-        
+
     Copyright Reserved to Alicia walters
     </div>
     </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="JS/randomdata.js"></script>
     </body>
-    
-    
-    
-   
+
+
+
+
 
 </html>
- 
-
